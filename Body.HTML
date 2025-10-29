@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sooryaraj — Full Stack Developer & Photographer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container nav-bar">
+            <h1>Personal Portfolio</h1>
+            <nav>
+                <a href="#gallery">Photos</a>
+                <a href="#videos">Videos</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h2>Hi — I’m Sooryaraj.</h2>
+                <p>Full Stack Developer, Photographer & Video/Photo Editor. I build web applications, capture stunning photos, and edit cinematic videos.Aspiring Full Stack Web Developer Computer Science Student,Photographer,Video & Photo Editor Passionate
+                    About Building Web Applications Developing</p>
+                <div class="buttons">
+                    <a href="#contact" class="btn primary">Hire / Contact</a>
+                    <a href="Sooryaraj Resume-1.pdf" class="btn secondary" download>Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="sooryaraj.jpg" alt="Sooryaraj">
+            </div>
+        </div>
+    </header>
+
+    <section id="gallery" class="container fade-up">
+        <h3>Photography</h3>
+        <div class="grid">
+            <div class="card"><img src="isha 1.jpg">
+                <p>Isha Road</p>
+            </div>
+            <div class="card"><img src="isha 2.jpg">
+                <p>Isha Hills</p>
+            </div>
+            <div class="card"><img src="tuty beach.jpg">
+                <p>Beach</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="container fade-up">
+        <h3>Videography</h3>
+        <div class="grid">
+            <div class="card">
+                <video controls><source src="videos/video1.mp4" type="video/mp4"></video>
+                <p>Will Upload Soon</p>
+            </div>
+            <div class="card">
+                <video controls><source src="videos/video2.mp4" type="video/mp4"></video>
+                <p>Will Upload Soon</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container fade-up">
+        <h3>Web Projects</h3>
+        <div class="grid">
+            <div class="card">
+                 <h4>Java</h4>
+                <p>React + Node.js + MongoDB. Real-time inventory.</p>
+           
+    </section>
+
+    <section id="contact" class="contact fade-up">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <form id="contactForm">
+                <label>Your Name</label>
+                <input type="text" id="name" required>
+                <label>Message</label>
+                <textarea id="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="email-link">
+                <p>Or email me directly:</p>
+                <a href="mailto:sooryaraj.dev@gmail.com">sooryaraj.dev@gmail.com</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © 2025 Sooryaraj — Built with HTML, CSS & JavaScript
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
