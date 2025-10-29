@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top left, #ff9a3d, #ffcc70, #fff);
+    color: #222;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero {
+    background: linear-gradient(90deg, #ff6a00, #ffb347);
+    color: white;
+    padding-bottom: 60px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-bar h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-bar nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-bar nav a:hover {
+    color: #222;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    animation: slideInLeft 1s ease;
+}
+
+.hero-text h2 {
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #f8f8f8;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #fff;
+    color: #ff6a00;
+}
+
+.btn.secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.hero-img {
+    flex: 1;
+    text-align: center;
+    animation: slideInRight 1s ease;
+}
+
+.hero-img img {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    padding: 60px 0;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6a00;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img,
+.card video {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 15px;
+    color: #444;
+}
+
+.contact {
+    background: #fff9f0;
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+form label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin: 8px 0 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    background: linear-gradient(90deg, #ff6a00, #ffb347);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
+
+.email-link {
+    margin-top: 10px;
+}
+
+.email-link a {
+    color: #ff6a00;
+    text-decoration: underline;
+}
+
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
